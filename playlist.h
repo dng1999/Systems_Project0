@@ -2,29 +2,29 @@
 
 
 //add song
-struct song_node *add_song(struct song_node *list, struct song_node *song);
+song_node *add_song(song_node *list, song_node *song);
 
 //search for a song
-struct song_node *find_song(struct song_node *list, char *name);
+song_node *search_song(song_node *list, char *name);
 
 //search for an artist
-struct song_node *find_artist(struct song_node *list, char *artist);
+song_node *search_artist(song_node *list, char *artist);
 
 //print out all entries under a certain letter
-void print_letter(struct song_node *list, char *letter);
+void print_letter(song_node *list, char *letter);
 
 //print out all songs of a certain artist
-void print_artist(struct song_node *list, char *artist);
+void print_artist(song_node *list, char *artist);
 
 //print out the entire library
-void print_list(struct song_node *list);
+void print_lib(song_node *list);
 
 //shuffle - print out a series of randomly chosen songs
-struct song_node *shuffle(struct song_node *list);
+song_node *shuffle(song_node *list);
 
 //delete a song
-struct song_node *del_song(struct song_node *list, struct song_node *song);
+song_node *del_song(song_node *list, song_node *song);
 
 //delete all the nodes
-struct song_node *del_list(struct song_node *list);
+song_node *del_list(song_node *list);
 
