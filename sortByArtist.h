@@ -23,4 +23,4 @@ song_node *remove_node(song_node *list, song_node *song);
 
 //free the entire list
 //should return null
-node *free_list(node *list);
+song_node *free_list(song_node *list);
