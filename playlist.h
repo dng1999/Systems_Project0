@@ -1,5 +1,9 @@
 /* header for playlist */
 
+//array of song_nodes
+typedef struct playlist{
+  song_node * table[26];
+} playlist;
 
 //add song
 song_node *add_song(song_node *list, song_node *song);

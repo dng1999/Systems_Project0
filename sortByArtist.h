@@ -1,5 +1,12 @@
 /* header file for sorting by artist*/
 
+//a single song
+typedef struct song_node{
+  char name[256];
+  char artist[256];
+  struct song_node *next;
+} song_node;
+
 //insert node at front
 song_node *insert_front(song_node *list, song_node *song);
 
