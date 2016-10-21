@@ -48,9 +48,10 @@ song_node *insert_order(song_node *list, song_node *song){
 
 void print_list(song_node *list){
   while (list){
-    printf("%s - %s",list->artist, list->name);
+    printf("*%s - %s* ",list->artist, list->name);
     list = list->next;
   }
+  printf("end");
 }
 
 song_node *find_song(song_node *list, char *name){

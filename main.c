@@ -15,10 +15,37 @@ int main(){
   list = add_song(list,"shinee","replay");
   list = add_song(list,"hydrogen sea","beating heart");
 
+  printf("Testing print_lib:\n");
+  print_lib(list);
 
-  printf("Testing find:\n");
+  printf("\nTesting print_letter:\n");
   printf("a artists: /t");
-  print_list(playlist,'p');
+  print_letter(list,'a');
+ 
+  printf("\nTesting search_song:\n");
+  printf("looking for *shangri la*\n");
+  search_song(list, "shangri la");
+  printf("looking for *separation*\n");
+  search_song(list, "separation");
 
+  printf("\nTesting search_artist:\n");
+  printf("looking for angela\n");
+  search_artist(list, "angela");
+  printf("\nlooking for hamo\n");
+  search_artist(list, "hamo");
+  
+  printf("\nTesting print_artist:\n");
+  printf("angela:\t");
+  print_artist(list,"angela");
+  printf("\nshinee:\t");
+  print_artist(list,"shinee");
+  
+  printf("\nTesting shuffle:\n");
+  shuffle(list);
+
+  printf("\nTesting del_song:\n");
+  
+  del_song(list,
+  
   return 0;
 }

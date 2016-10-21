@@ -37,10 +37,11 @@ void print_artist(song_node *list, char *artist){
   int pos = strcmp(letter,'a');
   while(list[pos]){
     if (list[pos]->artist == artist){
-      printf("%s - %s",list[pos]->artist, list[pos]->name);
+      printf("*%s - %s* ",list[pos]->artist, list[pos]->name);
     }
     list[pos] = list[pos]->next;
   }
+  printf("end");
 }
 
 void print_lib(song_node *list){
