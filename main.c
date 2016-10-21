@@ -43,9 +43,11 @@ int main(){
   printf("\nTesting shuffle:\n");
   shuffle(list);
 
-  printf("\nTesting del_song:\n");
+  printf("\nTesting del_song:\n");  
+  del_song(list,"alan walker","sing me to sleep");
   
-  del_song(list,
+  printf("\nTesting del_list:\n");
+  del_list(list);
   
   return 0;
 }
