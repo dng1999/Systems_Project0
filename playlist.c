@@ -60,9 +60,9 @@ void *shuffle(song_node *list){
   }
 }
 
-song_node *del_song(song_node *list, song_node *song){
+song_node *del_song(song_node *list, char *artist, char *name){
   int pos = strncmp(artist,'a',1);
-  remove_node(list[pos],song);
+  remove_node(list[pos],artist,name);
 }
 
 song_node *del_list(song_node *list){
