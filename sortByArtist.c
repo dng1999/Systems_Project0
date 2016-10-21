@@ -16,10 +16,17 @@ typedef struct song_node{
 song_node *table[26];
 
 int main(){
+  
   return 0;
 }
 
 //-----------SONG_NODE FUNCTIONS
+song_node *make_node(char *artist, char*name){
+  song_node *song = (song_node *) calloc(sizeof(song_node),1);
+  song->artist = artist;
+  song->name = name;
+}
+
 song_node *insert_front(song_node *list, song_node *song){
   song->next = list;
   length++;
