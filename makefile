@@ -1,5 +1,5 @@
-compile1: sortByArtist.c
-	gcc sortByArtist.c
+compile: main.o playlist.o sortByArtist.o
+	gcc main.o playlist.o sortByArtist.o -o a.out
 
 run: a.out
 	./a.out
