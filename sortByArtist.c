@@ -91,17 +91,17 @@ song_node *random_song(song_node *list){
   return list;
 }
 
-song_node *remove_node(song_node *list, song_node *song){
-  if (list == song){
-    song_node *tmp = song->next;
-    free(song);
+song_node *remove_node(song_node *list, char *artist, char *name){
+  if (list->artist == artis && list->name == namet){
+    song_node *tmp = list->next;
+    free(list);
     return tmp;
   }
   else {
     while (list){
-      if (list->next == song){
-	list->next == song->next;
-	free(song);
+      if (list->next->artist == artist && list->next->name == name){
+	list->next == list->next->next;
+	free(list->next);
 	return list;
       }
       else {
